@@ -1,7 +1,12 @@
 # Pepeho klub
 
-* [Github pages](https://vhrmo.github.io/klub-pepeho)
-* [Development info](Development.md)
 
+<br>
+<div>
+    <img src="src/svg/map.svg" alt="None">
+</div>
 
-<img src="src/svg/map.svg" alt="None">
+<br>
+<div style="background: aquamarine">
+    <img src="src/svg/map.svg" alt="None">
+</div>
