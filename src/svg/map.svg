@@ -4,16 +4,14 @@
 
     <defs>
         <style type="text/css">
-            @import url(https://fonts.googleapis.com/css?family=Sarabun);
-
             text {
-            font-family: Sarabun;
-            text-rendering: geometricPrecision;
+                font-family: Arial;
+                text-rendering: geometricPrecision;
             }
         </style>
     </defs>
 
-    <g fill="none" id="sk_borders" stroke="#e0e0e0" stroke-miterlimit="22.926" stroke-width="3.8">
+    <g fill="none" id="sk_borders" stroke="#c8c8c8" stroke-miterlimit="22.926" stroke-width="3">
         <path d="M44.883,224.691L41.5,226.85
         c0.216,3.527-5.686,9.789-6.621,14.755c-2.519,2.808-4.895,10.149-4.607,13.028c-4.103,3.382-8.997,11.156-7.197,14.826l-0.72,3.814
         c-0.36,3.959,2.663,8.421,1.871,11.876c-7.845,3.743-2.375,8.134-10.148,9.789l-3.095,4.967l-3.095,3.311
@@ -364,7 +362,7 @@
         <!--        <text transform="matrix(1 0 0 1 883 208)">Vranov nad Topľou</text>-->
     </g>
 
-    <g fill="#404040" font-family="Sarabun" font-size="14" font-weight="700" id="Nazvy velkych miest">
+    <g fill="#727272" font-family="Sarabun" font-size="14" font-weight="700" id="Nazvy velkych miest">
         <text transform="matrix(1 0 0 1 51 415)">Bratislava</text>
         <text transform="matrix(1 0 0 1 115 320)">Trnava</text>
         <text transform="matrix(1 0 0 1 240 201)">Trenčín</text>
@@ -375,7 +373,35 @@
             <tspan x="0" y="14">Bystrica</tspan>
         </text>
         <text transform="matrix(1 0 0 1 815 178)">Prešov</text>
-        <text transform="matrix(1 0 0 1 740 260)">Košice</text>
+        <text transform="matrix(1 0 0 1 748 266)">Košice</text>
+    </g>
+
+    <g stroke-width="1" transform="translate(225,215)">
+        <rect y="2" x="2" height="28" width="82" rx="6" stroke="darkred" fill="red"/>
+        <text x="7" y="21" font-size="14" font-weight="700">Duchonka</text>
+        <circle cx="14" cy="45" r="6" stroke="darkred" stroke-width="1" fill="red"/>
+        <polygon points="10,32 14,44 24,32" stroke="darkred" fill="darkred"/>
+    </g>
+
+    <g stroke-width="1" transform="translate(385,125)">
+        <rect y="2" x="2" height="28" width="120" rx="6" stroke="darkred" fill="red"/>
+        <text x="7" y="21" font-size="14" font-weight="700">Jasenská dolina</text>
+        <circle cx="14" cy="45" r="6" stroke="darkred" stroke-width="1" fill="red"/>
+        <polygon points="10,32 14,44 24,32" stroke="darkred" fill="darkred"/>
+    </g>
+
+    <g stroke-width="1" transform="translate(280,355)">
+        <rect y="2" x="2" height="28" width="82" rx="6" stroke="darkred" fill="red"/>
+        <text x="7" y="21" font-size="14" font-weight="700">Dolný Pial</text>
+        <circle cx="14" cy="45" r="6" stroke="darkred" stroke-width="1" fill="red"/>
+        <polygon points="10,32 14,44 24,32" stroke="darkred" fill="darkred"/>
+    </g>
+
+    <g stroke-width="1" transform="translate(310,182)">
+        <rect y="2" x="2" height="28" width="61" rx="6" stroke="darkred" fill="red"/>
+        <text x="7" y="21" font-size="14" font-weight="700">Bojnice</text>
+        <circle cx="14" cy="45" r="6" stroke="darkred" stroke-width="1" fill="red"/>
+        <polygon points="10,32 14,44 24,32" stroke="darkred" fill="darkred"/>
     </g>
 
 </svg>
