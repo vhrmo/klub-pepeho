@@ -147,7 +147,19 @@ var cities = {
     ]
 };
 
-
+function regionColors1(feature) {
+    var colors = {
+        BA: "lightcoral",
+        TT: "lightskyblue",
+        TN: "lightgreen",
+        NR: "yellow",
+        ZA: "lightskyblue",
+        BB: "lightcoral",
+        PO: "yellow",
+        KE: "lightgreen"
+    };
+    return colors[feature.properties.id]
+}
 
 /***************************************************************************
  * Create a map
@@ -194,14 +206,15 @@ function createMap(elementId, options) {
      * Add optional map features
      **************************************************************************/
     if (options) {
-        if (options.loadTiles) {
+        if (options.tiles) {
             /***************************************************************************
              * Optionally add tiles
              **************************************************************************/
-            L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
-                attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ',
-            }).addTo(map);
-
+            L.tileLayer(options.tiles.urlTemplate, options.tiles.options).addTo(map);
+        }
+        if (options.bigImage) {
+            // add support to export map to image
+            L.control.bigImage(options.bigImage).addTo(map);
         }
         if (options.overlays) {
             options.overlays.forEach(function(overlay){
@@ -209,6 +222,7 @@ function createMap(elementId, options) {
             })
         }
     }
+
 
     return map;
 }
@@ -218,12 +232,15 @@ function createMap(elementId, options) {
  * Regions overlay
  ***************************************************************************/
 function regionsOverlay(map, options) {
-    var regionOptions = options.regionsOverlay
+    // region options or empty options object
+    var regionOptions = options.regionsOverlay || {};
+    // Use defined color scheme function or always return 'none' as fillColor
+    var colorScheme = regionOptions.colorScheme || function(e) {return "none"} ;
     function style(feature) {
         // console.log(feature.properties.id);
         // console.log( colorScheme[feature.properties.id]);
         return {
-            fillColor: "none",
+            fillColor: colorScheme(feature),
             weight: 1,
             opacity: 1,
             color: '#b3b3b3',
@@ -261,10 +278,10 @@ function regionsOverlay(map, options) {
  * Districts overlay
  ***************************************************************************/
 function districtsOverlay(map, options) {
-    var options = options.districtsOverlay;
+    var options = options.districtsOverlay || {};
     function style(feature) {
         return {
-            fillColor: '#e8eaed',
+            fillColor: 'none',
             weight: 1,
             opacity: 1,
             color: '#b3b3b3',

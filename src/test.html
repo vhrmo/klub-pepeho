@@ -12,6 +12,9 @@
             integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
             crossorigin=""></script>
 
+    <link rel="stylesheet" href="assets/Leaflet.BigImage.css" crossorigin=""/>
+    <script src="assets/Leaflet.BigImage.js" crossorigin=""></script>
+
     <link rel="stylesheet" href="map.css" crossorigin=""/>
     <script src="map.js" crossorigin=""></script>
 
@@ -49,15 +52,27 @@
     /***************************************************************************
      * Create maps
      **************************************************************************/
-    createMap('map1', {
+    var map = createMap('map1', {
         overlays: [regionsOverlay],
+        // tiles: {
+        //     urlTemplate: 'https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}',
+            // options: {
+            //     attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ',
+            // }
+        // },
         regionsOverlay: {
-        //     colorScheme: regionColors2
+            // colorScheme: regionColors1
+            hideLabels: true
+        },
+        bigImage: {
+            position: 'bottomright'
         }
     });
 
 
 </script>
+
+<!--<a href="#" onclick="printToFile()">Save</a>-->
 
 </body>
 </html>
