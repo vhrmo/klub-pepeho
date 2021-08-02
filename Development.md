@@ -15,8 +15,11 @@ See full details on [Github pages documentation](https://docs.github.com/en/page
 # Used third party libs and data
 
 * Map JS library: <https://leafletjs.com>
-* Leaflet plugin to export map to image: https://github.com/pasichnykvasyl/Leaflet.BigImage
+* Leaflet plugin to export map to image: <https://github.com/pasichnykvasyl/Leaflet.BigImage>
 * GeoJson data taken from: <https://github.com/drakh/slovakia-gps-data>
 
+# Leaflet tiles
 
+* List of map tile providers: <https://github.com/leaflet-extras/leaflet-providers>
+* Interactive demo of all map tiles: <https://leaflet-extras.github.io/leaflet-providers/preview>
 

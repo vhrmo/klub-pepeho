@@ -166,41 +166,42 @@ function regionColors1(feature) {
  **************************************************************************/
 function createMap(elementId, options) {
     var map = L.map(elementId, {
-        center: [48.69, 19.7],
+        // center: [48.69, 19.7],
         maxZoom: 16,
         zoomSnap: 0,
-        zoomControl: false,
+        // zoomControl: false,
         boxZoom: false,
-        doubleClickZoom: false,
-        markerZoomAnimation: false,
+        // doubleClickZoom: false,
+        // markerZoomAnimation: false,
         fadeAnimation: false,
         zoomAnimation: false,
-        scrollWheelZoom: false,
-        dragging: false
+        // scrollWheelZoom: false,
+        // dragging: false
     });
+    map.setView([48.69, 19.7], 8);
 
     /***************************************************************************
      * Handle browser window resize which causes map size change
      **************************************************************************/
-    function fitMap(){
-        map.fitBounds(skBounds);
-    }
+    // function fitMap(){
+    //     map.fitBounds(skBounds);  // TODO pouzitie fitBounds znefukncni screen shot s map tiles
+    // }
 
     /***************************************************************************
      * Zoom to bounds of Slovakia
      **************************************************************************/
-    var skLayer = L.geoJson(slovakia);
-    var skBounds = skLayer.getBounds().pad(0.005);
-    fitMap();
+    // var skLayer = L.geoJson(slovakia);
+    // var skBounds = skLayer.getBounds().pad(0.005);
+    // fitMap();
 
     /***************************************************************************
      * Handle browser window resize
      **************************************************************************/
-    var doit;
-    window.addEventListener("resize", function() {
-        clearTimeout(doit);
-        doit = setTimeout(fitMap, 50);
-    });
+    // var doit;
+    // window.addEventListener("resize", function() {
+    //     clearTimeout(doit);
+    //     doit = setTimeout(fitMap, 50);
+    // });
 
     /***************************************************************************
      * Add optional map features
@@ -274,6 +275,7 @@ function regionsOverlay(map, options) {
     }
 }
 
+
 /***************************************************************************
  * Districts overlay
  ***************************************************************************/
@@ -307,7 +309,43 @@ function districtsOverlay(map, options) {
             options.method(map,options);
         }
     });
+}
 
+
+/***************************************************************************
+ * Cities overlay
+ ***************************************************************************/
+function citiesOverlay(map, options) {
+
+
+    function renderPoint(geoJsonPoint, latlng) {
+        return L.circle(latlng, {
+            color: '#b3b3b3',
+            fillColor: '#787878',
+            fillOpacity: 1,
+            radius: 2000
+        });
+    }
+
+    var layer = L.geoJson(cities, {
+        pointToLayer: renderPoint
+    });
+    layer.addTo(map);
+
+    // layer.eachLayer(function (layer) {
+    //     var count = layer.feature.properties.count;
+    //     if (count) {
+    //         var center = layer.getCenter();
+    //         options['sizeRatio'] = 0.8;
+    //         options['count'] = count;
+    //         options['pos'] = center;
+    //         var name = layer.feature.properties.NM3;
+    //         if (name == 'Bratislava I') name = 'Bratislava';
+    //         if (name == 'Košice I') name = 'Košice';
+    //         options['name'] = name;
+    //         options.method(map,options);
+    //     }
+    // });
 }
 
 
