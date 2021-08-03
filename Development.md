@@ -23,3 +23,7 @@ See full details on [Github pages documentation](https://docs.github.com/en/page
 * List of map tile providers: <https://github.com/leaflet-extras/leaflet-providers>
 * Interactive demo of all map tiles: <https://leaflet-extras.github.io/leaflet-providers/preview>
 
+# SVG map
+
+* Manually edited map
+* Conversion tool to convert SVG to PNG - <https://cloudconvert.com/svg-to-png> (you can set resulting image resolution)
