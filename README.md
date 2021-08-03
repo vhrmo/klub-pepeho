@@ -14,7 +14,7 @@
 
 # Na stiahnutie
 
-<a href="https://github.com/vhrmo/klub-pepeho/raw/main/src/svg/map.png" download>
+<a href="https://vhrmo.github.io/klub-pepeho/src/svg/map.png" download>
   Obrázok mapy na stiahnutie (PNG formát)
 </a>
 
