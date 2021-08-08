@@ -2,6 +2,7 @@
 # Miesta činu
 
 <br>
+<div style="padding: 20px">
 <div>
     <img src="src/svg/map.svg" alt="None">
 </div>
@@ -10,10 +11,11 @@
 <div>
     <img src="src/svg/map_dark.svg" alt="None">
 </div>
+</div>
 
-# Ešte raz s farebným pozadím
 <br>
-<div style="background: #7fbda9">
+# Ešte raz s farebným pozadím
+<div style="background: #7fbda9; padding: 20px">
 <div>
     <img src="src/svg/map.svg" alt="None">
 </div>
