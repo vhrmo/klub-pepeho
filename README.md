@@ -1,4 +1,9 @@
 
+<div>
+    <img src="src/svg/klubovy-znak.svg" alt="None" width="200" height="200">
+</div>
+
+
 # Miesta činu
 
 <br>
@@ -28,8 +33,12 @@
 
 # Na stiahnutie
 
+<li><a href="https://vhrmo.github.io/klub-pepeho/src/svg/klubovy-znak.png" download>
+  Klubový znak (PNG formát)
+</a>
+<br>
 <li><a href="https://vhrmo.github.io/klub-pepeho/src/svg/map.png" download>
-  Svetlá mapa  (PNG formát)
+  Svetlá mapa (PNG formát)
 </a>
 <br>
 <li><a href="https://vhrmo.github.io/klub-pepeho/src/svg/map_dark.png" download>
