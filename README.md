@@ -25,11 +25,11 @@
 # Na stiahnutie
 
 <ul>
-<a href="https://vhrmo.github.io/klub-pepeho/src/svg/map.png" download>
-  <li>Svetlá mapa  (PNG formát)
+<li><a href="https://vhrmo.github.io/klub-pepeho/src/svg/map.png" download>
+  Svetlá mapa  (PNG formát)
 </a>
 <br>
-<a href="https://vhrmo.github.io/klub-pepeho/src/svg/map_dark.png" download>
-  <li>Tmavá mapa (PNG formát)
+<li><a href="https://vhrmo.github.io/klub-pepeho/src/svg/map_dark.png" download>
+  Tmavá mapa (PNG formát)
 </a>
 </ul>
