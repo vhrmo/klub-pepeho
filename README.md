@@ -14,12 +14,14 @@
 # Ešte raz s farebným pozadím
 <br>
 <div style="background: #7fbda9">
+<div>
     <img src="src/svg/map.svg" alt="None">
 </div>
 
 <br>
-<div style="background: #7fbda9">
+<div>
     <img src="src/svg/map_dark.svg" alt="None">
+</div>
 </div>
 
 # Na stiahnutie
