@@ -377,21 +377,21 @@
     </g>
 
     <g stroke-width="1" transform="translate(225,215)">
-        <rect y="2" x="2" height="28" width="82" rx="6" stroke="darkred" fill="red"/>
+        <rect y="2" x="2" height="28" width="78" rx="6" stroke="darkred" fill="red"/>
         <text x="7" y="21" font-size="14" font-weight="700">Duchonka</text>
         <circle cx="14" cy="45" r="6" stroke="darkred" stroke-width="1" fill="red"/>
         <polygon points="10,32 14,44 24,32" stroke="darkred" fill="darkred"/>
     </g>
 
     <g stroke-width="1" transform="translate(385,125)">
-        <rect y="2" x="2" height="28" width="120" rx="6" stroke="darkred" fill="red"/>
+        <rect y="2" x="2" height="28" width="119" rx="6" stroke="darkred" fill="red"/>
         <text x="7" y="21" font-size="14" font-weight="700">Jasenská dolina</text>
         <circle cx="14" cy="45" r="6" stroke="darkred" stroke-width="1" fill="red"/>
         <polygon points="10,32 14,44 24,32" stroke="darkred" fill="darkred"/>
     </g>
 
     <g stroke-width="1" transform="translate(280,355)">
-        <rect y="2" x="2" height="28" width="82" rx="6" stroke="darkred" fill="red"/>
+        <rect y="2" x="2" height="28" width="79" rx="6" stroke="darkred" fill="red"/>
         <text x="7" y="21" font-size="14" font-weight="700">Dolný Pial</text>
         <circle cx="14" cy="45" r="6" stroke="darkred" stroke-width="1" fill="red"/>
         <polygon points="10,32 14,44 24,32" stroke="darkred" fill="darkred"/>
@@ -405,8 +405,15 @@
     </g>
 
     <g stroke-width="1" transform="translate(398,56)">
-        <rect y="2" x="2" height="28" width="73" rx="6" stroke="darkred" fill="red"/>
+        <rect y="2" x="2" height="28" width="71" rx="6" stroke="darkred" fill="red"/>
         <text x="7" y="21" font-size="14" font-weight="700">Terchová</text>
+        <circle cx="14" cy="45" r="6" stroke="darkred" stroke-width="1" fill="red"/>
+        <polygon points="10,32 14,44 24,32" stroke="darkred" fill="darkred"/>
+    </g>
+
+    <g stroke-width="1" transform="translate(618,90)">
+        <rect y="2" x="2" height="28" width="90" rx="6" stroke="darkred" fill="red"/>
+        <text x="7" y="21" font-size="14" font-weight="700">Stará Lesná</text>
         <circle cx="14" cy="45" r="6" stroke="darkred" stroke-width="1" fill="red"/>
         <polygon points="10,32 14,44 24,32" stroke="darkred" fill="darkred"/>
     </g>
